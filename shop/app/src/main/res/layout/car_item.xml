@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    /*
+     * 购物车每一个list view 里面装的东西
+    */
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/first_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignBaseline="@+id/first_letter"
+            android:layout_alignBottom="@id/first_letter"
+            android:layout_toRightOf="@id/first_letter"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_alignBaseline="@id/first_letter"
+            android:layout_alignBottom="@id/first_letter"
+            android:layout_marginLeft="250sp"
+            android:layout_gravity="center"
+            />
+    </RelativeLayout>
+</LinearLayout>
